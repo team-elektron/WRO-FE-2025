@@ -32,6 +32,10 @@ This is the public repository for our team and the work we have done on our robo
 
 For the driving base we have chosen a pre-made RC car driving base due to a lack of time. The steering and main driving motors are controled by a L298N Motor H-Bridge controller. 
 
+<p float="left">
+  <img src="other/l298n.jpg" width="200"/>
+</p>
+
 ### Cameras & Sensors
 
 On our robot we have utilised a MPU-6050 IMU sensor for detecting the rotation angle when steering. 
