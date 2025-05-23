@@ -19,22 +19,46 @@ This is the public repository for our team and the work we have done on our robo
 ### Technical specifications
 - Power: 3s1p Li-Ion Battery (EVE ICR18650-26v)
 - Control: Raspberry Pi 5 8GB SBC
-- Movement: Gear motor
+- Movement: Brushed motor
 - Sensors: 3x Ultrasonic sensors, Camera
 
 ### Driving elements
 
-To-Do...
+For the driving base we have chosen a pre-made RC car driving base due to a lack of time. The steering and main driving motors are controled by a L298N Motor H-Bridge controller. 
 
 ### Cameras & Sensors
 
-To-Do...
+On our robot we have utilised a MPU-6050 IMU sensor for detecting the rotation angle when steering. 
+The "eyes" of the operation are a set of 3 HC-SR04 Ultrasonic sensors and a standard USB Webcam.
 
 ### Power supply and control elements
 
-To-Do...
+For the power supply we chose a custom made 18650 based battery in the 3s1p configuration which can be quickly charged with USB-C. 
+This gives us around 27.5Wh (2.5Ah @ 10.8v nominal) to work with which is plenty for the job at hand.
 
-### Robot control elements
+<p float="left">
+  <img src="other/battery1.jpg" width="200"/>
+  &nbsp;
+  <img src="other/battery2.jpg" width="200"/>
+</p>
 
-We are controlling the robot via the Raspberry Pi 5 8GB SBC. It provides a lot of power for image processing.
-To-Do...
+The robot is based on a Raspberry Pi 5 which requires a stable power input of 5v @ 5A, for this job we have first chosen an UBEC voltage regulator, but due to the specific adapter we got not actually being able to handle the Pi, we had to switch to a more readily available replacement, the XL4015.
+
+<p float="left">
+  <img src="other/xl4015.png" width="200"/>
+  &nbsp;
+  <img src="other/ubec.png" width="200"/>
+</p>
+
+We have designed a custom Pi GPIO shield to more easily wire up all of our power sources and sensors. The design for this PCB can be found in the schemes folder.
+
+<p float="left">
+  <img src="schemes/pcb1.jpg" width="200"/>
+  &nbsp;
+  <img src="schemes/pcb2.jpg" width="200"/>
+</p>
+
+### Code
+
+We have written our code in C++ using the WiringPi library for interfacing the Pi GPIO. 
+You can find the code in the src folder and the instructions on how to use it.
