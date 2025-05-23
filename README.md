@@ -41,6 +41,14 @@ For the driving base we have chosen a pre-made RC car driving base due to a lack
 On our robot we have utilised a MPU-6050 IMU sensor for detecting the rotation angle when steering. 
 The "eyes" of the operation are a set of 3 HC-SR04 Ultrasonic sensors and a standard USB Webcam.
 
+<p float="left">
+  <img src="other/hc-sr04.jpg" width="200"/>
+  &nbsp;
+  <img src="other/mpu6050.jpg" width="200"/>
+  &nbsp;
+  <img src="other/s-l400.jpg" width="200"/>
+</p>
+
 ### Power supply and control elements
 
 For the power supply we chose a custom made 18650 based battery in the 3s1p configuration which can be quickly charged with USB-C. 
