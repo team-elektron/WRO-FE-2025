@@ -56,6 +56,10 @@ We have designed a custom Pi GPIO shield to more easily wire up all of our power
   <img src="schemes/pcb1.jpg" width="200"/>
   &nbsp;
   <img src="schemes/pcb2.jpg" width="200"/>
+  &nbsp;
+  <img src="schemes/pcb3.jpg" width="200"/>
+  &nbsp;
+  <img src="schemes/pcb4.jpg" width="200"/>
 </p>
 
 ### Code
